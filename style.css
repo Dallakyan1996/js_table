@@ -1,0 +1,82 @@
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #EFF3FC;
+}
+
+.tbodyTd {
+    text-align: center;
+    font-size: 11px;
+}
+
+th {
+    font-size: 10px;
+    text-align: center;
+    background-color: #36304e;
+    color: white;
+    font-family: Sans-serif;
+    padding-top: 3px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    padding-top: 2rem;
+	    width: 100% !important;
+}
+
+tr {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.tableWrapper {
+    padding-right: 0rem;
+    width: 99% !important;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+#trHead th:nth-child(2) {
+    width: 200px !important;
+}
+
+tbody tr td:nth-child(2) {
+    width: 150px !important;
+
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+
+    /* padding: 6px; */
+    font-family: Sans-serif;
+    color: #748097 !important;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 0px !important;
+    border-bottom: 1px solid #111;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 8px 1px;
+}
+.footer{
+  /* background-color: red; */
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding:0.7rem;
+}
+
+
+.phoneNumber{
+  margin-right: 2rem
+}

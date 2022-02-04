@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div class="tableWrapper">
+        <table id="example" class="display">
+            <thead class="tableHead">
+                <tr id="trHead">
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+      <div class="emailDiv">
+        EMAIL: user@gmail.com
+    </div>
+    <div class="phoneNumber">
+      NUMBER: +37477777777
+  </div>
+    </div
+</body>
+<script src="script.js">
+</script>
+<script>
+$(document).ready(function () {
+    $('#example').DataTable({
+        "order": [[0, "asc"]],
+        "ordering": false,
+        "pageLength": 10,
+        "columnDefs": [
+            { "width": "100px", "targets": 1 },
+        ],
+        "lengthMenu": [[10, 25, 50], [10, 25, 50]]
+    });
+});
+</script>
+
+</html>
